@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISHES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- HOME PAAGE OPEN  -->
+<section>
+    <div class="container">
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/" alt="Resturant Logo">
+            </div>
+
+            <!-- Menu -->
+            <ul class="nav-menu">
+
+                
+     <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="Dishes.html">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="Reservatio.html">Reservations</a></li>
+    <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+
+            </ul>
+           
+        </nav>
+    </div>
+</section>
+
+<!-- HOME BANNER OPEN -->
+ <section class="hero-banner">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+<span>Fine Dining Experience</span>
+
+<h1>Taste the Art of Exceptional Cuisine</h1>
+
+<p>
+    Discover a perfect blend of taste, elegance, and hospitality
+    with our chef-crafted signature dishes.
+</p>
+
+<a href="#">Reserve Now</a>
+    </div>
+</section>
+<!-- HOME BANNER CLOSE -->
+
+<!-- DISHES NAME OPEN -->
+<section class="food-menu">
+
+    <div class="section-title">
+        <span>Our Special Menu</span>
+        <h2>Popular Delicious Dishes</h2>
+    </div>
+
+    <div class="food-container">
+
+      <!-- Burger Card -->
+<div class="food-card">
+
+    <img id="burger-image" src="images/Paneer-Burger-scaled.jpg" alt="Burger">
+
+    <div class="food-info">
+
+        <h3>Burger</h3>
+        <p>Choose your favorite burger type:</p>
+
+        <div class="price-order">
+
+            <!-- Burger Type -->
+            <select id="burger-type"
+                onchange="updateMenu('burger-type','burger-image','price-display','qty')">
+
+                <option value="149" data-img="images/cheese burger.jpg">
+                    Paneer Burger - ₹149
+                </option>
+
+                <option value="119" data-img="images/aloo-tikki-burger.jpg">
+                    Aloo Tikki Burger - ₹119
+                </option>
+
+                <option value="169" data-img="images/cheese burger.jpg">
+                    Cheese Burger - ₹169
+                </option>
+
+                <option value="179" data-img="images/double patty burger.jpeg">
+                    Veg Crispy Burger - ₹179
+                </option>
+
+                <option value="229" data-img="images/double patty burger.jpeg">
+                    Double Patty Burger - ₹229
+                </option>
+
+                <option value="199" data-img="images/pizza burger.jpg">
+                    Pizza Burger - ₹199
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('burger-type','price-display','qty')">
+                    -
+                </button>
+
+                <span id="qty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('burger-type','price-display','qty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="price-display">₹149</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Pizza Card -->
+<div class="food-card">
+
+    <img id="pizza-image" src="images/margherita pizza.jpg" alt="Pizza">
+
+    <div class="food-info">
+
+        <h3>Pizza</h3>
+        <p>Choose your favorite pizza type:</p>
+
+        <div class="price-order">
+
+            <!-- Pizza Type -->
+            <select id="pizza-type"
+                onchange="updateMenu('pizza-type','pizza-image','pizza-price-display','pizzaQty')">
+
+                <option value="249" data-img="images/margherita pizza.jpg">
+                    Margherita Pizza - ₹249
+                </option>
+
+                <option value="349" data-img="images/farm house pizza.avif">
+                    Farm House Pizza - ₹349
+                </option>
+
+                <option value="399" data-img="images/veg loaded pizza.jpeg">
+                    Veg Loaded Pizza - ₹399
+                </option>
+
+                <option value="449" data-img="images/paneer tikka pizza.jpg">
+                    Paneer Tikka Pizza - ₹449
+                </option>
+
+                <option value="499" data-img="images/cheese burst pizza.jpeg">
+                    Cheese Burst Pizza - ₹499
+                </option>
+
+                <option value="469" data-img="images/mexican green wave pizza.jpg">
+                    Mexican Green Wave - ₹469
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('pizza-type','pizza-price-display','pizzaQty')">
+                    -
+                </button>
+
+                <span id="pizzaQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('pizza-type','pizza-price-display','pizzaQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="pizza-price-display">₹249</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Fast Food Card -->
+<div class="food-card">
+
+    <!-- Food Image -->
+    <img id="fastfood-image" src="images/veg sandwhich.jpg" alt="Fast Food">
+
+    <div class="food-info">
+
+        <h3>Fast Food</h3>
+        <p>Choose your favorite fast food item:</p>
+
+        <div class="price-order">
+
+            <!-- Fast Food Type -->
+            <select id="fastfood-type"
+                onchange="updateMenu('fastfood-type','fastfood-image','fastfood-price-display','fastfoodQty')">
+
+                <option value="99" data-img="images 2/veg sandwhich.jpg">
+                    Veg Sandwich - ₹99
+                </option>
+
+                <option value="149" data-img="images/grilled sandwhich.webp">
+                    Grilled Sandwich - ₹149
+                </option>
+
+                <option value="169" data-img="images/paneer sandwhich.jpeg">
+                    Paneer Sandwich - ₹169
+                </option>
+
+                <option value="119" data-img="images/french fries.jpg">
+                    French Fries - ₹119
+                </option>
+
+                <option value="149" data-img="images/peri peri fries.jpeg">
+                    Peri Peri Fries - ₹149
+                </option>
+
+                <option value="129" data-img="images 2/veg hot dog.jpg">
+                    Veg Hot Dog - ₹129
+                </option>
+
+                <option value="199" data-img="images/white-sauce-pasta.jpg">
+                    Pasta White Sauce - ₹199
+                </option>
+
+                <option value="189" data-img="images/red-sauce-pasta.jpg">
+                    Pasta Red Sauce - ₹189
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('fastfood-type','fastfood-price-display','fastfoodQty')">
+                    -
+                </button>
+
+                <span id="fastfoodQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('fastfood-type','fastfood-price-display','fastfoodQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="fastfood-price-display">₹99</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Chinese Food Card -->
+<div class="food-card">
+
+    <!-- Food Image -->
+    <img id="chinese-image" src="images/hakka noodles.jpg" alt="Chinese Food">
+
+    <div class="food-info">
+
+        <h3>Chinese Food</h3>
+        <p>Choose your favorite Chinese dish:</p>
+
+        <div class="price-order">
+
+            <!-- Chinese Food Type -->
+            <select id="chinese-type"
+                onchange="updateMenu('chinese-type','chinese-image','chinese-price-display','chineseQty')">
+
+                <option value="179" data-img="images/veg noodles.jpeg">
+                    Veg Noodles - ₹179
+                </option>
+
+                <option value="199" data-img="images/hakka noodles.jpg">
+                    Hakka Noodles - ₹199
+                </option>
+
+                <option value="219" data-img="images/schezwan noodles.jpg">
+                    Schezwan Noodles - ₹219
+                </option>
+
+                <option value="189" data-img="images 2/veg freid rice.jpg">
+                    Veg Fried Rice - ₹189
+                </option>
+
+                <option value="229" data-img="images/paneer fried rice.webp">
+                    Paneer Fried Rice - ₹229
+                </option>
+
+                <option value="199" data-img="images/manchurian-dry.jpg">
+                    Manchurian Dry - ₹199
+                </option>
+
+                <option value="229" data-img="images/manchurian gravy.jpeg">
+                    Manchurian Gravy - ₹229
+                </option>
+
+                <option value="179" data-img="images/spring roll.jpg">
+                    Spring Roll - ₹179
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('chinese-type','chinese-price-display','chineseQty')">
+                    -
+                </button>
+
+                <span id="chineseQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('chinese-type','chinese-price-display','chineseQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="chinese-price-display">₹179</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div><!-- Paneer Special Sabji Card -->
+<div class="food-card">
+
+    <!-- Sabji Image -->
+    <img id="paneerSabji-image" src="images/paneer butter masala sabji.jpg" alt="Paneer Special">
+
+    <div class="food-info">
+
+        <h3>Paneer Special Sabji</h3>
+        <p>Select your favorite paneer dish and plate size:</p>
+
+        <div class="price-order">
+
+            <!-- Paneer Sabji Type -->
+            <select id="paneerSabji-type"
+                onchange="updateMenu('paneerSabji-type','paneerSabji-image','paneerSabji-price-display','paneerSabjiQty')">
+
+                <option value="220" data-img="images/paneer butter masala sabji.jpg">
+                    Paneer Butter Masala (Half) - ₹220
+                </option>
+
+                <option value="420" data-img="images/paneer butter masala sabji.jpg">
+                    Paneer Butter Masala (Full) - ₹420
+                </option>
+
+                <option value="210" data-img="images/shahi paneer.cms">
+                    Shahi Paneer (Half) - ₹210
+                </option>
+
+                <option value="410" data-img="images/shahi paneer.cms">
+                    Shahi Paneer (Full) - ₹410
+                </option>
+
+                <option value="230" data-img="images/kadai paneer.jpg">
+                    Kadai Paneer (Half) - ₹230
+                </option>
+
+                <option value="430" data-img="images/kadai paneer.jpg">
+                    Kadai Paneer (Full) - ₹430
+                </option>
+
+                <option value="240" data-img="images/paneer lababdar.jpeg">
+                    Paneer Lababdar (Half) - ₹240
+                </option>
+
+                <option value="450" data-img="images/paneer lababdar.jpeg">
+                    Paneer Lababdar (Full) - ₹450
+                </option>
+
+                <option value="190" data-img="images/matar paneer.cms">
+                    Matar Paneer (Half) - ₹190
+                </option>
+
+                <option value="370" data-img="images/matar paneer.cms">
+                    Matar Paneer (Full) - ₹370
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('paneerSabji-type','paneerSabji-price-display','paneerSabjiQty')">
+                    -
+                </button>
+
+                <span id="paneerSabjiQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('paneerSabji-type','paneerSabji-price-display','paneerSabjiQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="paneerSabji-price-display">₹220</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Regular Veg Sabji Card -->
+<div class="food-card">
+
+    <!-- Sabji Image -->
+    <img id="vegSabji-image" src="images/dum aalu sabji.jpg" alt="Veg Sabji">
+
+    <div class="food-info">
+
+        <h3>Regular Veg Sabji</h3>
+        <p>Select your favorite sabji and plate size:</p>
+
+        <div class="price-order">
+
+            <!-- Veg Sabji Type -->
+            <select id="vegSabji-type"
+                onchange="updateMenu('vegSabji-type','vegSabji-image','vegSabji-price-display','vegSabjiQty')">
+
+                <option value="180" data-img="images/mix veg sabji.jpeg">
+                    Mix Veg (Half) - ₹180
+                </option>
+
+                <option value="350" data-img="images/mix veg sabji.jpeg">
+                    Mix Veg (Full) - ₹350
+                </option>
+
+                <option value="150" data-img="images/aalo jeera sabji.jpg">
+                    Aloo Jeera (Half) - ₹150
+                </option>
+
+                <option value="290" data-img="images/aalo jeera sabji.jpg">
+                    Aloo Jeera (Full) - ₹290
+                </option>
+
+                <option value="170" data-img="images/sev tamatar sabji.jpg">
+                    Sev Tamatar (Half) - ₹170
+                </option>
+
+                <option value="330" data-img="images/sev tamatar sabji.jpg">
+                    Sev Tamatar (Full) - ₹330
+                </option>
+
+                <option value="180" data-img="images/bhindi-masala.jpg">
+                    Bhindi Masala (Half) - ₹180
+                </option>
+
+                <option value="350" data-img="images/bhindi masala sabji.jpg">
+                    Bhindi Masala (Full) - ₹350
+                </option>
+
+                <option value="190" data-img="images/dum aalu sabji.jpg">
+                    Dum Aloo (Half) - ₹190
+                </option>
+
+                <option value="370" data-img="images/dum aalu sabji.jpg">
+                    Dum Aloo (Full) - ₹370
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('vegSabji-type','vegSabji-price-display','vegSabjiQty')">
+                    -
+                </button>
+
+                <span id="vegSabjiQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('vegSabji-type','vegSabji-price-display','vegSabjiQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="vegSabji-price-display">₹180</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Rice & Biryani Card -->
+<div class="food-card">
+
+    <!-- Rice Image -->
+    <img id="rice-image" src="images/steam rice.avif" alt="Rice">
+
+    <div class="food-info">
+
+        <h3>Rice & Biryani</h3>
+        <p>Select your favorite rice dish:</p>
+
+        <div class="price-order">
+
+            <!-- Rice Type -->
+            <select id="rice-type"
+                onchange="updateMenu('rice-type','rice-image','rice-price-display','riceQty')">
+
+                <option value="120" data-img="images/steam rice.avif">
+                    Steam Rice - ₹120
+                </option>
+
+                <option value="150" data-img="images/jeera rice.jpg">
+                    Jeera Rice - ₹150
+                </option>
+
+                <option value="190" data-img="images 2/veg pulao rice.jpeg">
+                    Veg Pulao - ₹190
+                </option>
+
+                <option value="240" data-img="images/kashmiri pulao rice.jpeg">
+                    Kashmiri Pulao - ₹240
+                </option>
+
+                <option value="260" data-img="images 2/veg biryani rice.jpg">
+                    Veg Biryani - ₹260
+                </option>
+
+                <option value="320" data-img="images/paneer biryani rice.jpg">
+                    Paneer Biryani - ₹320
+                </option>
+
+                <option value="350" data-img="images/hyderabad biryani rice.jpg">
+                    Hyderabadi Biryani - ₹350
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('rice-type','rice-price-display','riceQty')">
+                    -
+                </button>
+
+                <span id="riceQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('rice-type','rice-price-display','riceQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="rice-price-display">₹120</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Roti, Naan & Paratha Card -->
+<div class="food-card">
+
+    <!-- Roti Image -->
+    <img id="roti-image" src="images/Tawa-Roti.jpg" alt="Roti">
+
+    <div class="food-info">
+
+        <h3>Roti, Naan & Paratha</h3>
+        <p>Select your favorite bread:</p>
+
+        <div class="price-order">
+
+            <!-- Bread Type -->
+            <select id="roti-type"
+                onchange="updateMenu('roti-type','roti-image','roti-price-display','rotiQty')">
+
+                <option value="15" data-img="images/tawa-roti.jpg">
+                    Tawa Roti - ₹15
+                </option>
+
+                <option value="20" data-img="images/butteer roti.jpg">
+                    Butter Roti - ₹20
+                </option>
+
+                <option value="35" data-img="images/missi roti.jpeg">
+                    Missi Roti - ₹35
+                </option>
+
+                <option value="40" data-img="images/plain naan.webp">
+                    Plain Naan - ₹40
+                </option>
+
+                <option value="50" data-img="images/butter naan.jpeg">
+                    Butter Naan - ₹50
+                </option>
+
+                <option value="70" data-img="images/garlic naan.jpg">
+                    Garlic Naan - ₹70
+                </option>
+
+                <option value="60" data-img="images/lacha paratha naan.jpg">
+                    Lachha Paratha - ₹60
+                </option>
+
+                <option value="80" data-img="images/stuffed kulcha.jpg">
+                    Stuffed Kulcha - ₹80
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('roti-type','roti-price-display','rotiQty')">
+                    -
+                </button>
+
+                <span id="rotiQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('roti-type','roti-price-display','rotiQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="roti-price-display">₹15</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- South Indian Food Card -->
+<div class="food-card">
+
+    <!-- South Indian Image -->
+    <img id="south-image" src="images/Plain-Dosa.webp" alt="South Indian Food">
+
+    <div class="food-info">
+
+        <h3>South Indian Special</h3>
+        <p>Select your favorite South Indian dish:</p>
+
+        <div class="price-order">
+
+            <!-- Dish Type -->
+            <select id="south-type"
+                onchange="updateMenu('south-type','south-image','south-price-display','southQty')">
+
+                <option value="120" data-img="images/Plain-Dosa.webp">
+                    Plain Dosa - ₹120
+                </option>
+
+                <option value="150" data-img="images/masala dosa.jpg">
+                    Masala Dosa - ₹150
+                </option>
+
+                <option value="180" data-img="images/paneer dosa.avif">
+                    Paneer Dosa - ₹180
+                </option>
+
+                <option value="170" data-img="images/mysore dosa.webp">
+                    Mysore Dosa - ₹170
+                </option>
+
+                <option value="90" data-img="images/idli dosa.jpg">
+                    Idli Sambhar - ₹90
+                </option>
+
+                <option value="110" data-img="images 2/vada sambhar.jpeg">
+                    Vada Sambhar - ₹110
+                </option>
+
+                <option value="140" data-img="images/uttapam.jpg">
+                    Uttapam - ₹140
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('south-type','south-price-display','southQty')">
+                    -
+                </button>
+
+                <span id="southQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('south-type','south-price-display','southQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="south-price-display">₹120</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Snacks & Street Food Card -->
+<div class="food-card">
+
+    <!-- Snacks Image -->
+    <img id="snacks-image" src="images/samosa.jpeg" alt="Snacks">
+
+    <div class="food-info">
+
+        <h3>Snacks & Street Food</h3>
+        <p>Select your favorite snack:</p>
+
+        <div class="price-order">
+
+            <select id="snacks-type"
+                onchange="updateMenu('snacks-type','snacks-image','snacks-price-display','snacksQty')">
+
+                <option value="20" data-img="images/samosa.jpeg">
+                    Samosa - ₹20
+                </option>
+
+                <option value="25" data-img="images/khachori.jpg">
+                    Kachori - ₹25
+                </option>
+
+                <option value="30" data-img="images/bread pakoda.jpeg">
+                    Bread Pakoda - ₹30
+                </option>
+
+                <option value="120" data-img="images/paneer pakoda.jpeg">
+                    Paneer Pakoda - ₹120
+                </option>
+
+                <option value="80" data-img="images/veg cutlet.jpeg">
+                    Veg Cutlet - ₹80
+                </option>
+
+                <option value="90" data-img="images/dhokla.jpg">
+                    Dhokla - ₹90
+                </option>
+
+                <option value="140" data-img="images/jalebi fafda.jpg">
+                    Fafda - ₹140
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('snacks-type','snacks-price-display','snacksQty')">
+                    -
+                </button>
+
+                <span id="snacksQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('snacks-type','snacks-price-display','snacksQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="snacks-price-display">₹20</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div><!-- Sweets & Desserts Card -->
+<div class="food-card">
+
+    <!-- Sweet Image -->
+    <img id="sweet-image" src="images/jalebi.avif" alt="Sweets & Desserts">
+
+    <div class="food-info">
+
+        <h3>Sweets & Desserts</h3>
+        <p>Choose from our delicious range of traditional Indian sweets.</p>
+
+        <div class="price-order">
+
+            <select id="sweet-type"
+                onchange="updateMenu('sweet-type','sweet-image','sweet-price-display','sweetQty')">
+
+                <option value="180" data-img="images/jalebi.avif">
+                    Jalebi - ₹180/kg
+                </option>
+
+                <option value="220" data-img="images/rabri jalebi.jpeg">
+                    Rabri Jalebi - ₹220/Plate
+                </option>
+
+                <option value="25" data-img="images/gulab jamun.jpeg">
+                    Gulab Jamun - ₹25/Piece
+                </option>
+
+                <option value="25" data-img="images/rasgulla.jpeg">
+                    Rasgulla - ₹25/Piece
+                </option>
+
+                <option value="40" data-img="images/rasmalai.jpeg">
+                    Rasmalai - ₹40/Piece
+                </option>
+
+                <option value="900" data-img="images/kaju katli.jpeg">
+                    Kaju Katli - ₹900/kg
+                </option>
+
+                <option value="520" data-img="images/milk cake.jpeg">
+                    Milk Cake - ₹520/kg
+                </option>
+
+                <option value="420" data-img="images/besan ladddo.webp">
+                    Besan Ladoo - ₹420/kg
+                </option>
+
+                <option value="450" data-img="images/motichoor laddu.jpeg">
+                    Motichoor Ladoo - ₹450/kg
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('sweet-type','sweet-price-display','sweetQty')">
+                    -
+                </button>
+
+                <span id="sweetQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('sweet-type','sweet-price-display','sweetQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="sweet-price-display">₹180</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Beverages & Drinks Card -->
+<div class="food-card">
+
+    <!-- Drink Image -->
+    <img id="beverage-image" src="images/tea.jpg" alt="Beverages">
+
+    <div class="food-info">
+
+        <h3>Beverages & Drinks</h3>
+        <p>Select your favorite beverage:</p>
+
+        <div class="price-order">
+
+            <select id="beverage-type"
+                onchange="updateMenu('beverage-type','beverage-image','beverage-price-display','beverageQty')">
+
+                <option value="20" data-img="images/tea.jpg">
+                    Tea - ₹20
+                </option>
+
+                <option value="30" data-img="images/masala-tea.jpg">
+                    Masala Tea - ₹30
+                </option>
+
+                <option value="50" data-img="images/coffee tea.jpg">
+                    Coffee - ₹50
+                </option>
+
+                <option value="120" data-img="images/cold-coffee.jpg">
+                    Cold Coffee - ₹120
+                </option>
+
+                <option value="80" data-img="images/sweet lassi.jpeg">
+                    Sweet Lassi - ₹80
+                </option>
+
+                <option value="140" data-img="images/mango shake.jpg">
+                    Mango Shake - ₹140
+                </option>
+
+                <option value="160" data-img="images/oreo drink.jpg">
+                    Oreo Shake - ₹160
+                </option>
+
+                <option value="40" data-img="images/soft drink.webp">
+                    Soft Drink - ₹40
+                </option>
+
+                <option value="20" data-img="images/miniral water.jpeg">
+                    Mineral Water - ₹20
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('beverage-type','beverage-price-display','beverageQty')">
+                    -
+                </button>
+
+                <span id="beverageQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('beverage-type','beverage-price-display','beverageQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="beverage-price-display">₹20</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Ice Cream & Desserts Card -->
+<div class="food-card">
+
+    <!-- Ice Cream Image -->
+    <img id="icecream-image" src="images/vanilla ice cream.jpg" alt="Ice Cream">
+
+    <div class="food-info">
+
+        <h3>Ice Cream & Desserts</h3>
+        <p>Select your favorite ice cream:</p>
+
+        <div class="price-order">
+
+            <select id="icecream-type"
+                onchange="updateMenu('icecream-type','icecream-image','icecream-price-display','icecreamQty')">
+
+                <option value="60" data-img="images/vanilla ice cream.jpg">
+                    Vanilla - ₹60
+                </option>
+
+                <option value="80" data-img="images/chocolate ice cream.jpg">
+                    Chocolate - ₹80
+                </option>
+
+                <option value="80" data-img="images/butterscotch ice cream.jpg">
+                    Butterscotch - ₹80
+                </option>
+
+                <option value="70" data-img="images/kulfi ice cream.avif">
+                    Kulfi - ₹70
+                </option>
+
+                <option value="120" data-img="images/matka kulfi ice cream.jpeg">
+                    Matka Kulfi - ₹120
+                </option>
+
+                <option value="180" data-img="images/brownie sundae ice cream.jpeg">
+                    Brownie Sundae - ₹180
+                </option>
+
+            </select>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+
+                <button type="button"
+                    onclick="decreaseQty('icecream-type','icecream-price-display','icecreamQty')">
+                    -
+                </button>
+
+                <span id="icecreamQty">1</span>
+
+                <button type="button"
+                    onclick="increaseQty('icecream-type','icecream-price-display','icecreamQty')">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Total Price -->
+            <span id="icecream-price-display">₹60</span>
+
+            <!-- Order -->
+            <details>
+                <summary>Order Now</summary>
+
+                <div class="order-options">
+                    <a href="#">Zomato</a>
+                    <a href="#">Swiggy</a>
+                    <a href="tel:+919999999999">Call Now</a>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--  -->
+
+
+
+
+
+    </div>
+</section>
+<!-- DISHES NAME CLOSE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- HIGHLIGHTS OEPN -->
+<div class="about-stats-section">
+
+    <div class="stats-heading">
+        <span>Our Achievements</span>
+        <h3>Why Customers Love Our Restaurant</h3>
+    </div>
+
+    <div class="about-highlights">
+
+        <div class="highlight-box">
+            <h3>20+</h3>
+            <p>Years of Experience</p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>100%</h3>
+            <p>Fresh & Hygienic Food</p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>5000+</h3>
+            <p>Happy Customers</p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>50+</h3>
+            <p>Delicious Dishes</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ABOUT PAGE CLOSE -->
+ 
+
+
+<!-- PLATFORM PART OPEN  -->
+<section class="available-on">
+
+    <div class="container">
+
+        <h2>Available On</h2>
+
+        <div class="platform-wrapper">
+
+            <!-- Zomato -->
+            <a href="https://www.zomato.com/" target="_blank" class="platform-box">
+                <img src="images/zomato.webp" alt="">
+                <h3>Zomato</h3>
+            </a>
+
+            <!-- Swiggy -->
+            <a href="https://www.swiggy.com/" target="_blank" class="platform-box">
+                <img src="images/swiggy.png" alt="">
+                <h3>Swiggy</h3>
+            </a>
+
+            <!-- Google Business -->
+            <a href="https://g.page/" target="_blank" class="platform-box">
+                <img src="images/google.png" alt="">
+                <h3>Google</h3>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/yourrestaurant" target="_blank" class="platform-box">
+                <img src="images/instagram.jpeg" alt="">
+                <h3>Instagram</h3>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com/yourrestaurant" target="_blank" class="platform-box">
+                <img src="images/facebook.webp" alt="">
+                <h3>Facebook</h3>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- <PLATFORMS CLOSE --> 
+<!-- COUNTER PART OPEN -->
+<!-- COUNTER PART OPEN -->
+
+<!-- ================= COUNTER SECTION ================= -->
+<section class="counter-section">
+
+    <div class="counter-heading">
+        <span>OUR ACHIEVEMENTS</span>
+        <h2>Serving Delicious Memories Every Day</h2>
+        <p>
+            From authentic flavors to exceptional hospitality, our journey
+            is built on passion, quality, and the trust of thousands of
+            happy guests.
+        </p>
+    </div>
+
+    <div class="container counter-wrapper">
+
+        <div class="counter-box">
+            <h2 data-target="10">0</h2>
+            <p>Years of Experience</p>
+        </div>
+
+        <div class="counter-box">
+            <h2 data-target="50000">0</h2>
+            <p>Happy Customers</p>
+        </div>
+
+        <div class="counter-box">
+            <h2 data-target="50">0</h2>
+            <p>Expert Chefs</p>
+        </div>
+
+        <div class="counter-box">
+            <h2 data-target="100">0</h2>
+            <p>Delicious Dishes</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- COUNTER PART CLOSE -->
+
+
+<!-- footer part OPEN -->
+
+<!-- ================= FOOTER SECTION ================= -->
+
+<footer class="footer">
+    <div class="container footer-wrapper">
+
+        <!-- Restaurant Info -->
+        <div class="footer-box">
+            <h2>Zaika-E-Dilli</h2>
+            <p>
+                Experience authentic Indian flavors crafted with fresh
+                ingredients and traditional recipes. Your perfect dining
+                destination for family and friends.
+            </p>
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="tel:+919876543210"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+
+            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+
+            <p><i class="fas fa-envelope"></i> info@zaikaedilli.com</p>
+
+            <p>
+                <i class="fas fa-location-dot"></i>
+                Gandhi Nagar, Delhi, India
+            </p>
+        </div>
+
+        <!-- Book Table -->
+        <div class="footer-box">
+            <h3>Book A Table</h3>
+
+            <p>
+                Reserve your seat and enjoy an unforgettable dining
+                experience.
+            </p>
+
+            <a href="#" class="footer-btn">
+                Book Now
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Zaika-E-Dilli | All Rights Reserved.
+        </p>
+    </div>
+</footer>
+<!-- FOOTER part CLOSE -->
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
